@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button v-on:click="showPets">Show Pets</button>
+    <button v-on:click="showPets">Show Pet</button>
     <p>{{ $store.state.pets }}</p>
   </div>
 </template>
