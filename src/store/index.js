@@ -17,7 +17,7 @@ export default new Vuex.Store({
 
   actions: {
     getPetsdata: function ({commit}) {
-      return axios.get('https://89nbrsaxkb.execute-api.ap-northeast-1.amazonaws.com/Prod/hello')
+      return axios.get('https://89nbrsaxkb.execute-api.ap-northeast-1.amazonaws.com/Stage/hello')
         .then(response => {
           commit('setPrice', {data: response.data})
         })
