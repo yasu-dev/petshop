@@ -16,9 +16,6 @@ export default new Vuex.Store({
   },
 
   actions: {
-    getPricedata: function ({commit}, {Xmldata}) {
-      return axios.post('https://89nbrsaxkb.execute-api.ap-northeast-1.amazonaws.com/Stage/user', Xmldata)
-    },
     postPetsdata: function ({commit}) {
       return axios.post('https://89nbrsaxkb.execute-api.ap-northeast-1.amazonaws.com/Prod/hello/')
         .then(response => {
